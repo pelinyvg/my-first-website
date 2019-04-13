@@ -5,45 +5,140 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 12px 12px;
     justify-content: left;
+    align-content: center;
 }
+
+/** COMMON **/
 
 .box {
     
 }
 
-.a {
-    grid-area: 1 / 1 / 4 / 2;
-    background-color: whitesmoke;
+.white {
+    color: #FFF;
 }
 
-.b {
-    grid-area: 1 / 2 / 2 / 3;
-    background-color: rgb(40, 99, 146);
-}
-
-.c {
-    grid-area: 1 / 3 / 2 / 4;
-    background-color: rgb(190, 157, 9);
-}
-
-.d {
-    grid-area: 2 / 2 / 3 / 4;
-    border: 1px solid rgb(189, 183, 183);
-}
-
-.e {
-    grid-area: 3 / 2 / 4 / 4;
-
+.black {
+    color: black;
 }
 
 p {
     font-family: Helvetica, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    color:#FFF;
 }
 
-.profile{
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-weight: bold;
+} 
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.description-text{
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.institution {
+    font-weight: bold;
+}
+
+.degree {
+    font-style: italic;
+}
+
+.year {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 85%;
+}
+
+/** SKILLS **/
+#skills.box {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/** EDUCATION **/
+#education.box {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+
+/** EXPERIENCE **/
+#experience.box {
+    grid-area: 2 / 2 / 3 / 4;
+    border: 1px solid rgb(189, 183, 183);
+}
+
+#other {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.75em; 
+}
+#other h3{
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+/** INTRO **/
+
+#intro.box {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: rgb(8, 33, 54);
+}
+
+#name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#surname{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#profile-picture{
     border-radius: 5%;
     display: block;
     margin-left: auto;
@@ -53,93 +148,45 @@ p {
     opacity: 0.90;
 }
 
-.about {
+#about {
     font-family: Helvetica, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 0.85em;
-    color: rgb(136, 126, 126) ;
+    color: rgba(255, 255, 255, 0.5) ;
 }
 
-.social{
+#social-media{
     font-family: Helvetica, sans-serif;
     padding-left: 20px;
     padding-right: 20px;
-    color: black;
+    padding-top: 25px;
+    color: white;
     font-size: 1em;
 }
 
-.blackp {
-    font-family: Helvetica, sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
+ul#social-media{
+    list-style: none;
 }
 
-.text {
-    font-family: Helvetica, sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
-    color:#FFF;
-    font-size: 1em;
+#social-media li{
+    float:left;
+    padding-right: 25px;
+    font-size: 30px;
 }
-.textb{
-    font-family: Helvetica, sans-serif;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-    font-size: 1em;
-}
-
-h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: bold;
-    padding-top: 10px;
-    opacity: 0.8;
-}
-
-.surname{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    opacity: 0.8;
-}
-
-.heading {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+a {
     color: #FFF;
-    font-size: 1.5em;
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    font-weight: bold;
 }
 
-.headingb {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    font-size: 1.5em;
-    text-align: left;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    font-weight: bold;
+#address {
+    margin-top: 50px;
 }
 
-ul {
-    font-family: Helvetica, sans-serif;
-    padding-left: 50px;
-    padding-right: 20px;
-    color:#FFF;
+/** HOBBIES **/
+
+#hobby.box {
+    grid-area: 3 / 2 / 4 / 4;
+
 }
 
 .hobby{
