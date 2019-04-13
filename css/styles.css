@@ -106,21 +106,21 @@ ul#language-rating {
 
 /** SKILLS **/
 #skills.box {
-    grid-area: 1 / 2 / 2 / 4;
+    grid-area: 1 / 2 / span 1 / span 2;
     border: 1px solid rgb(189, 183, 183);
     margin-top: 20px;
 }
 
 /** EDUCATION **/
 #education.box {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 2 / span 1 / span 1;
     border: 1px solid rgb(189, 183, 183);
 }
 
 
 /** EXPERIENCE **/
 #experience.box {
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 2 / 3 / span 1 / span 1;
     border: 1px solid rgb(189, 183, 183);
 }
 
@@ -141,7 +141,7 @@ ul#language-rating {
 /** INTRO **/
 
 #intro.box {
-    grid-area: 1 / 1 / 4 / 2;
+    grid-area: 1 / 1 / span 3 / span 1;
     background-color: rgb(8, 33, 54);
     margin-top: 20px;
     margin-left: 20px;
