@@ -1,0 +1,151 @@
+.grid {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: 500px 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 12px 12px;
+    justify-content: left;
+}
+
+.box {
+    
+}
+
+.a {
+    grid-area: 1 / 1 / 4 / 2;
+    background-color: whitesmoke;
+}
+
+.b {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: rgb(40, 99, 146);
+}
+
+.c {
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: rgb(190, 157, 9);
+}
+
+.d {
+    grid-area: 2 / 2 / 3 / 4;
+    border: 1px solid rgb(189, 183, 183);
+}
+
+.e {
+    grid-area: 3 / 2 / 4 / 4;
+
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#FFF;
+}
+
+.profile{
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 450px;
+    opacity: 0.90;
+}
+
+.about {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.85em;
+    color: rgb(136, 126, 126) ;
+}
+
+.social{
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    font-size: 1em;
+}
+
+.blackp {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+.text {
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#FFF;
+    font-size: 1em;
+}
+.textb{
+    font-family: Helvetica, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    font-size: 1em;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    opacity: 0.8;
+}
+
+.surname{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.heading {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FFF;
+    font-size: 1.5em;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.headingb {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.5em;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+    padding-left: 50px;
+    padding-right: 20px;
+    color:#FFF;
+}
+
+.hobby{
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+}
